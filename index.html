@@ -1,0 +1,26 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penetration Testing Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Penetration Testing Toolkit</h1>
+        <h2>Port Scanner</h2>
+        <input type="text" id="targetHost" placeholder="Enter target host">
+        <button onclick="scanPorts()">Scan Ports</button>
+        <pre id="scanResults"></pre>
+
+        <h2>Brute Force Simulation</h2>
+        <input type="text" id="username" placeholder="Enter username">
+        <textarea id="wordlist" placeholder="Enter wordlist (one password per line)"></textarea>
+        <button onclick="bruteForce()">Start Brute Force</button>
+        <pre id="bruteResults"></pre>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
